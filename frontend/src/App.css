@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.header-full {
+  width: 100%;
+  background-color: #f0f0f0; /* Màu nền nhẹ, có thể đổi */
+  padding: 10px 0;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.header-left {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #333;
+}
+
+
+
+.container {
+  display: flex;
+  gap: 20px;
+  background: #ffffffcc;
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  max-width: 1000px;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.left-box, .right-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-box h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #2c3e50;
+  font-weight: 600;
+  text-align: center;
+}
+
+.left-box input[type="file"],
+.left-box input[type="datetime-local"],
+.left-box button {
+  margin-top: 10px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.left-box input[type="file"],
+.left-box input[type="datetime-local"] {
+  background: #f7f7f7;
+  border: 1px solid #ccc;
+}
+
+.left-box input:hover {
+  border-color: #8e44ad;
+  box-shadow: 0 0 6px rgba(142, 68, 173, 0.3);
+}
+
+.left-box button {
+  background: linear-gradient(to right, #8e44ad, #3498db);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.left-box button:hover {
+  background: linear-gradient(to right, #732d91, #2980b9);
+}
+
+.right-box img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.right-box p {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #34495e;
+  font-weight: 500;
+  text-align: center;
+}
